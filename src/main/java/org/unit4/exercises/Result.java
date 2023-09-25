@@ -13,7 +13,7 @@ public class Result {
         int[] result = new int[10];
 
         while(pos < 10){
-            out.print("Enter the result: ");
+            out.print("Enter the result (1 = pass, 2 = fail): ");
             result[pos] = input.nextInt();
             pos++;
         }
@@ -23,7 +23,7 @@ public class Result {
             fail = (type == 2) ? fail += 1 : fail;
         }
 
-        out.printf("The number of students who passed are: %s %nThe number of students who failed are: %s %n", pass, fail);
+        out.printf("\t\t\tPassed: %s %n\t\t\t Failed: %s %n", pass, fail);
 
         if(pass > 8)
             out.println("Bonus to instructor");
