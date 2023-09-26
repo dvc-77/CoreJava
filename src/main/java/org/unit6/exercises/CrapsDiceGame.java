@@ -10,11 +10,11 @@ public class CrapsDiceGame {
         WON,
         LOST
     };
-    private final int SNAKE_EYES = 2;
-    private final int TREY = 3;
-    private final int SEVEN = 7;
-    private final int YO_LEVEN = 11;
-    private final int BOX_CARS = 12;
+    private static final int SNAKE_EYES = 2;
+    private static final int TREY = 3;
+    private static final int SEVEN = 7;
+    private static final int YO_LEVEN = 11;
+    private static final int BOX_CARS = 12;
 
 
     public int rollDie() {
@@ -22,26 +22,25 @@ public class CrapsDiceGame {
 
         int firstDie = rollDie.nextInt(6) + 1;
         int secondDie = rollDie.nextInt(6) + 1;
+        int sum = firstDie + secondDie;
 
-        int roll = firstDie + secondDie;
+        out.printf("Player rolled %d + %d = %d%n", firstDie, secondDie, sum);
 
-        out.printf("Player rolled %d + %d = %d%n", firstDie, secondDie, roll);
-
-        return roll;
+        return sum;
     }
 
-    private int roll = rollDie();
-    public String gameStatus(){
+
+    public static String gameStatus(int value){
         String result = "";
-        switch(roll) {
+        switch(value) {
             case SEVEN, YO_LEVEN, BOX_CARS -> {
-                result = String.valueOf(Status.WON);
+                result = Status.WON.toString();
             }
             case TREY, SNAKE_EYES -> {
-                result = String.valueOf(Status.LOST);
+                result = Status.LOST.toString();
             }
             default -> {
-                result = String.valueOf(Status.CONTINUE);
+                result = Status.CONTINUE.toString();
             }
         }
         return result;
