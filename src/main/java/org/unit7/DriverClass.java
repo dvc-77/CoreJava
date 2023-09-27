@@ -1,4 +1,7 @@
 package org.unit7;
+import java.util.Scanner;
+
+import static java.lang.System.in;
 import static java.lang.System.out;
 public class DriverClass {
     // Tenagram
@@ -29,8 +32,6 @@ public class DriverClass {
                 {76, 72, 84},
                 {87, 93, 73}
         };
-
-
         GradeBook2 gradeBook2 = new GradeBook2(gradesArray);
         out.print("\t");
         gradeBook2.testName();
