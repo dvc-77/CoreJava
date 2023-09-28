@@ -1,4 +1,4 @@
-package org.simpletron;
+package org.recapUnit1To7;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Simpletron {
+public class Exercise {
     public static void main(String[] args) {
         Scanner input = new Scanner(in);
         int sum = 0;
@@ -61,8 +61,6 @@ public class Simpletron {
         Arrays.sort(values);
 
        out.println("The largest numbers is: " + values[values.length-1]);
-
-
 
     }
 }
