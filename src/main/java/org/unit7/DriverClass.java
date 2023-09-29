@@ -10,16 +10,6 @@ public class DriverClass {
             One-dimensional Array
          */
 
-        int[] grades = {87, 92, 52, 80, 79};
-        GradeBook gradeBook = new GradeBook(grades);
-
-        out.println("The grades are:\n");
-
-        gradeBook.output();
-
-        out.printf("Class average is %.2f%n", gradeBook.gradeAverage(grades));
-
-
         int[][] gradesArray = {
                 {87, 96, 70},
                 {68, 87, 90},
@@ -33,7 +23,7 @@ public class DriverClass {
                 {87, 93, 73}
         };
         GradeBook2 gradeBook2 = new GradeBook2(gradesArray);
-        out.print("\t");
+        out.print("\t\t\t");
         gradeBook2.testName();
         out.println();
         gradeBook2.output();
