@@ -31,7 +31,7 @@ public class Time1 {
     }
 
     public String displayTime(){
-        return String.format("Standard Time: %s%nUniversal Time: %s", toString(), toUniversalString());
+        return String.format("Standard Time: %s%nUniversal Time: %s", this.toString(), this.toUniversalString());
     }
 
 }
