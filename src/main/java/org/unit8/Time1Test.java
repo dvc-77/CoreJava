@@ -5,7 +5,7 @@ public class Time1Test {
         Time1 time = new Time1();
 
         try {
-            time.setTime(23, 56, 23);
+            time.setTime(22, 52, 23);
         } catch (Exception e) {
             System.out.println(String.format("Exception: %s", e));
             System.exit(0);
