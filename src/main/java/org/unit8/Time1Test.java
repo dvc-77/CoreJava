@@ -10,9 +10,9 @@ public class Time1Test {
             System.out.println(String.format("Exception: %s", e));
             System.exit(0);
         }
-//        System.out.println(time.toUniversalString());
+        System.out.println(time.toUniversalString());
 //
-//        System.out.println(time);
+        System.out.println(time);
         System.out.println(time.displayTime());
     }
 }

@@ -26,9 +26,9 @@ public class EnumDays {
         }
     }
     public static void main(String[] args) {
-//        String str = "TUESDAY";
-//        EnumDays test = new EnumDays(Day.valueOf(str));
-//        test.dayIsLike();
+        String str = "TUESDAY";
+        EnumDays test = new EnumDays(Day.valueOf(str));
+        test.dayIsLike();
 
         for(Day day: Day.values()) {
             System.out.print(day.toString()+": ");
